@@ -29,3 +29,14 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+
+vim.diagnostic.config({
+  virtual_text = {
+    spacing = 4,
+    prefix = "●", -- or "■", "󰅚 ", etc.
+  },
+  severity_sort = true,
+})
+
+vim.opt.splitright = true
+vim.opt.splitbelow = true
